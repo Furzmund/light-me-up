@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "light-me-up",
+	"version": "${version}",
+	"name": "Light Me Up",
+	"description": "Adds a Torch Arrow that places a torch on contact.",
+	"authors": [
+		"Furzmund"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/furzmund/light-me-up/"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/light-me-up/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"org.furzmund.lightmeup.LightMeUp"
+		],
+		"client": [
+			"org.furzmund.lightmeup.LightMeUpClient"
+		],
+		"fabric-datagen": [
+			"org.furzmund.lightmeup.LightMeUpDataGenerator"
+		]
+	},
+	"mixins": [
+		"light-me-up.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
