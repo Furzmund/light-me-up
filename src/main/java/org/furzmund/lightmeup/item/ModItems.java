@@ -13,7 +13,9 @@ import org.furzmund.lightmeup.LightMeUp;
 
 public class ModItems {
 
-    public static final Item TORCH_ARROW = registerItem("torch_arrow", new Item(new FabricItemSettings()));
+    public static final Item TORCH_ARROW = registerItem(
+            "torch_arrow", new TorchArrowItem(new FabricItemSettings())
+    );
 
     private static void addItemsToCombatTab(FabricItemGroupEntries entries) {
         entries.add(TORCH_ARROW);
