@@ -1,6 +1,8 @@
 package org.furzmund.lightmeup.entity.projectile;
 
+import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.WallTorchBlock;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.projectile.PersistentProjectileEntity;
@@ -10,6 +12,8 @@ import net.minecraft.network.listener.ClientPlayPacketListener;
 import net.minecraft.network.packet.Packet;
 import net.minecraft.network.packet.s2c.play.EntitySpawnS2CPacket;
 import net.minecraft.util.hit.BlockHitResult;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
 import org.furzmund.lightmeup.entity.ModEntities;
 import org.furzmund.lightmeup.item.ModItems;
@@ -42,14 +46,31 @@ public class TorchArrowEntity extends PersistentProjectileEntity {
         return new ItemStack(ModItems.TORCH_ARROW);
     }
 
-    @Override
-    protected void onBlockHit(BlockHitResult blockHitResult) {
-        if (!this.getWorld().isClient()) {
-            this.getWorld().sendEntityStatus(this, (byte)3);
-            this.getWorld().setBlockState(
-                    getBlockPos(), Blocks.TORCH.getDefaultState(),3);
+    protected void onBlockHit(BlockHitResult result) {
+        if(!this.getWorld().isClient()) {
+            BlockPos position = result.getBlockPos();
+            Direction direction = result.getSide();
+            BlockPos finalPosition = position.offset(direction);
+            BlockState state = this.getWorld().getBlockState(finalPosition);
+
+            if((state.isAir() || state.isReplaceable()) && direction != Direction.DOWN) {
+                BlockState blockState;
+                if(direction == Direction.UP)
+                    blockState = Blocks.TORCH.getDefaultState();
+                else
+                    blockState = Blocks.WALL_TORCH.getDefaultState().with(WallTorchBlock.FACING, direction);
+
+                if(blockState.canPlaceAt(this.getWorld(), finalPosition)) {
+                    this.getWorld().sendEntityStatus(this, (byte)3);
+                    this.getWorld().setBlockState(
+                            finalPosition, blockState, 3
+                    );
+                    this.discard();
+                }
+            }
         }
-        this.discard();
-        super.onBlockHit(blockHitResult);
+
+        super.onBlockHit(result);
     }
+
 }
