@@ -2,6 +2,7 @@ package org.furzmund.lightmeup;
 
 import net.fabricmc.api.ModInitializer;
 
+import org.furzmund.lightmeup.entity.ModEntities;
 import org.furzmund.lightmeup.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,6 +14,7 @@ public class LightMeUp implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+		ModEntities.registerModEntities();
 		LOGGER.info("Light Me Up loaded");
 	}
 }
