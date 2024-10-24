@@ -11,8 +11,8 @@ import org.furzmund.lightmeup.entity.projectile.TorchArrowEntity;
 public class TorchArrowItem extends ArrowItem {
     public TorchArrowItem(Item.Settings settings) { super(settings); }
 
-//    @Override
-//    public PersistentProjectileEntity createArrow(World world, ItemStack stack, LivingEntity shooter) {
-//        return new TorchArrowEntity(world, shooter);
-//    }
+    @Override
+    public PersistentProjectileEntity createArrow(World world, ItemStack stack, LivingEntity shooter) {
+        return new TorchArrowEntity(world, shooter);
+    }
 }
