@@ -46,6 +46,7 @@ public class TorchArrowEntity extends PersistentProjectileEntity {
         return new ItemStack(ModItems.TORCH_ARROW);
     }
 
+    @Override
     protected void onBlockHit(BlockHitResult result) {
         if(!this.getWorld().isClient()) {
             BlockPos position = result.getBlockPos();
