@@ -28,7 +28,6 @@ public class TorchArrowEntity extends PersistentProjectileEntity {
         super(ModEntities.TORCH_ARROW, x, y, z, world);
     }
 
-    //@Override
     protected Item getDefaultItem() {
         return ModItems.TORCH_ARROW;
     }
