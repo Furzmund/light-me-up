@@ -3,7 +3,7 @@
 	"id": "light-me-up",
 	"version": "${version}",
 	"name": "Light Me Up",
-	"description": "Adds a Torch Arrow that places a torch on contact.",
+	"description": "Light Me Up adds a Torch Arrow, allowing players to light up large areas more easily.",
 	"authors": [
 		"Furzmund"
 	],
