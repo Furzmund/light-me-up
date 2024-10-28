@@ -8,10 +8,8 @@
         ></a>
 </h1>
 
----
-
 ### Light Me Up adds a Torch Arrow, allowing players to light up large areas more easily.
 
-### Works with versions:
+### Compatible with versions:
  - 1.20.1
  - 1.20.2
