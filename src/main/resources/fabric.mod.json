@@ -3,12 +3,12 @@
 	"id": "light-me-up",
 	"version": "${version}",
 	"name": "Light Me Up",
-	"description": "Adds a Torch Arrow that places a torch on contact.",
+	"description": "Light Me Up adds a Torch Arrow, allowing players to light up large areas more easily.",
 	"authors": [
 		"Furzmund"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
+		"homepage": "https://modrinth.com/project/light-me-up/",
 		"sources": "https://github.com/furzmund/light-me-up/"
 	},
 	"license": "CC0-1.0",
