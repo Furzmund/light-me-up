@@ -3,7 +3,7 @@
 	"id": "light-me-up",
 	"version": "${version}",
 	"name": "Light Me Up",
-	"description": "Light Me Up adds a Torch Arrow, allowing players to light up large areas more easily.",
+	"description": "Light Me Up adds a Torch Arrow, allowing players to light up large areas faster.",
 	"authors": [
 		"Furzmund"
 	],
@@ -33,8 +33,5 @@
 		"minecraft": "~1.20.1",
 		"java": ">=17",
 		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
 	}
 }
