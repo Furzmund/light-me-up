@@ -10,11 +10,13 @@
 
 ### Light Me Up mod adds a torch arrow, allowing players to light up large areas faster.
 
-Are you tired of climbing and running around caves, trying to place torches, all the while you try not get eaten by zombies or get blown up by creepers?
+# Corny Plug
+
+Are you tired of climbing and running around caves, trying to place torches, all the while trying not to get eaten by zombies or blown up by creepers?~~~~
 
 Then this mod is for you!
 
-A torch arrow places a torch where it hits, if that location is valid for torch placement. This greatly speeds up and simplifies the lighting of large caverns and caves.
+A torch arrow places a torch where it hits, if that location is valid for torch placement. This greatly speeds up and simplifies the lighting of large caverns and caves. Lightly caves allows a player to see ore nodes, mobs and other intresting things.
 
 ## Recipes
 
