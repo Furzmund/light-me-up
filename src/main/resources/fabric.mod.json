@@ -3,7 +3,7 @@
 	"id": "light-me-up",
 	"version": "${version}",
 	"name": "Light Me Up",
-	"description": "Light Me Up adds a Torch Arrow, allowing players to light up large areas faster.",
+	"description": "Light Me Up adds a torch arrow, allowing players to light up large areas faster.",
 	"authors": [
 		"Furzmund"
 	],
@@ -11,7 +11,7 @@
 		"homepage": "https://modrinth.com/project/light-me-up/",
 		"sources": "https://github.com/furzmund/light-me-up/"
 	},
-	"license": "CC0-1.0",
+	"license": "LGPL-3.0",
 	"icon": "assets/light-me-up/icon.png",
 	"environment": "*",
 	"entrypoints": {
@@ -32,6 +32,6 @@
 		"fabricloader": ">=0.16.5",
 		"minecraft": "~1.20.1",
 		"java": ">=17",
-		"fabric-api": "*"
+		"fabric-api": ">=0.83.0+1.20.1"
 	}
 }
