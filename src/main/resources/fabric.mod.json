@@ -25,9 +25,6 @@
 			"org.furzmund.lightmeup.LightMeUpDataGenerator"
 		]
 	},
-	"mixins": [
-		"light-me-up.mixins.json"
-	],
 	"depends": {
 		"fabricloader": ">=0.16.5",
 		"minecraft": "~1.20.1",
