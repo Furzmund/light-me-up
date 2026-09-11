@@ -8,8 +8,30 @@
         ></a>
 </h1>
 
-### Light Me Up adds a Torch Arrow, allowing players to light up large areas more easily.
+### The Light Me Up mod adds a Torch Arrow, allowing players to light up large areas faster.
 
-### Compatible with versions:
+## Recipes
+
+| Ingredients | Type | Recipe |
+| --- | --- | --- |
+| Coal, Stick, Feather | Shaped | <img src="./images/recipe-charcoal.webp" alt="Recipe-Charcoal" width="200"> |
+| Charcoal, Stick, Feather | Shaped | <img src="./images/recipe-charcoal.webp" alt="Recipe-Charcoal" width="200"> |
+| Arrow, Torch | Shapeless | <img src="./images/recipe-shapeless.webp" alt="Recipe-Coal" width="200"> |
+
+## Compatible with versions:
+
  - 1.20.1
  - 1.20.2
+
+## Project Structure
+
+- SDK: temurin-17
+- Language level: 17
+
+## Build
+
+```
+$ ./gradlew build
+```
+
+Output location: `./build/libs/light-me-up-1.0.0+1.20.1-2.jar`
