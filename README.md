@@ -8,7 +8,13 @@
         ></a>
 </h1>
 
-### The Light Me Up mod adds a Torch Arrow, allowing players to light up large areas faster.
+### Light Me Up mod adds a Torch Arrow, allowing players to light up large areas faster.
+
+Are you tired of climbing and running around caves, trying to place torches, all the while you try not get eaten by zombies or get blown up by creepers?
+
+Then this mod is for you!
+
+A torch arrow places a torch where it hits, if that location is valid for torch placement. This greatly speeds up and simplifies the lighting of large caverns and caves.
 
 ## Recipes
 
