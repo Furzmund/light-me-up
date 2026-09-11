@@ -39,6 +39,7 @@ A torch arrow places a torch where it hits, if that location is valid for torch 
 ## Build
 
 ```
+$ export JAVA_HOME='/usr/lib/jvm/java-1.17.0-openjdk-amd64'
 $ ./gradlew build
 ```
 
